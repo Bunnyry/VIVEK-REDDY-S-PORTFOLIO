@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Associate Software Engineer Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container" role="banner">
+    <nav aria-label="Primary Navigation">
+      <div class="logo" tabindex="0">YourName</div>
+
+      <button
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="primary-navigation">
+        <a href="#about" tabindex="0">About</a>
+        <a href="#projects" tabindex="0">Projects</a>
+        <a href="#education" tabindex="0">Education</a>
+        <a href="#skills" tabindex="0">Skills</a>
+        <a href="#contact" tabindex="0">Contact</a>
+        <a href="#resume-section" tabindex="0">Resume</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Introduction" tabindex="0">
+    <div class="container">
+      <h1>YourName — Associate Software Engineer</h1>
+      <p>Passionate developer with 8 months of professional experience, delivering high-quality software solutions.</p>
+      <a href="#contact" class="btn-primary" tabindex="0">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title" tabindex="0">
+    <h2 id="about-title">About Me</h2>
+    <div class="container">
+      <p>Hi! I'm a dedicated Associate Software Engineer with 8 months of experience in software development. I have successfully completed two projects involving full cycle development and collaboration with cross-functional teams. I am constantly eager to learn new technologies and enhance my skills to build efficient and scalable solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="projects-title" tabindex="0">
+    <h2 id="projects-title">Projects</h2>
+    <div class="container cards" role="list">
+      <article class="card" tabindex="0" aria-label="Project One" role="listitem">
+        <h3>Project One</h3>
+        <p>A web application developed using React and Node.js that allows users to track their daily tasks with advanced filtering and reminder capabilities. I contributed to both frontend and backend development ensuring responsiveness and smooth user experience.</p>
+      </article>
+      <article class="card" tabindex="0" aria-label="Project Two" role="listitem">
+        <h3>Project Two</h3>
+        <p>Designed and implemented an inventory management system using Python and Flask with a PostgreSQL database. The system streamlines stock monitoring and generates detailed reports with charts for better decision-making.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="education" aria-labelledby="education-title" tabindex="0">
+    <h2 id="education-title">Education</h2>
+    <ul class="edu-list" role="list">
+      <li tabindex="0"><strong>Bachelor of Science in Computer Science</strong>, XYZ University (2019 - 2023)</li>
+      <li tabindex="0">High School Diploma, ABC High School (2017 - 2019)</li>
+    </ul>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-title" tabindex="0">
+    <h2 id="skills-title">Technical Skills</h2>
+    <ul class="skill-list" role="list">
+      <li tabindex="0">JavaScript (ES6+)</li>
+      <li tabindex="0">React.js</li>
+      <li tabindex="0">Node.js & Express</li>
+      <li tabindex="0">Python & Flask</li>
+      <li tabindex="0">HTML5 & CSS3</li>
+      <li tabindex="0">SQL & PostgreSQL</li>
+      <li tabindex="0">Git & Version Control</li>
+      <li tabindex="0">Agile Development</li>
+    </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title" tabindex="0">
+    <h2 id="contact-title">Contact Me</h2>
+    <form aria-label="Contact form" id="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
+      <span class="error-message" id="name-error" aria-live="polite" style="color:#dc2626;"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" />
+      <span class="error-message" id="email-error" aria-live="polite" style="color:#dc2626;"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required placeholder="Write your message here..." autocomplete="off" rows="5"></textarea>
+      <span class="error-message" id="message-error" aria-live="polite" style="color:#dc2626;"></span>
+
+      <button type="submit" id="submit-button">Send Message</button>
+      <div id="form-feedback" role="alert" aria-live="polite" style="margin-top:0.5rem;color:#2563eb;font-weight:600;"></div>
+    </form>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume-section" tabindex="0" aria-labelledby="resume-title">
+    <h2 id="resume-title">Resume</h2>
+    <div id="resume-content">
+      <p><strong>PULAKANDLA VIVEK REDDY</strong></p>
+      <p><strong>Email ID:</strong> reddyvivek492@gmail</p>
+      <p><strong>Contact No.:</strong> 6281093037</p>
+
+      <h3>Career Objective</h3>
+      <p>Detail-oriented and innovative software developer with a strong foundation in Python, HTML, CSS, JavaScript, and MySQL, complemented by a solid understanding of machine learning algorithms. Passionate about developing efficient, user-friendly applications and utilizing data-driven insights to enhance decision-making processes. Eager to collaborate with cross-functional teams to deliver high-quality solutions that drive business success.</p>
+      
+      <h3>Educational Qualifications</h3>
+      <ul>
+        <li><strong>BTech (CSE)</strong> - KG Reddy College of Engineering and Technology, JNTUH, TG (2024) - CGPA: 6.88</li>
+        <li><strong>Intermediate (MPC)</strong> - Narayana Junior College, BIE, TG (2020) - CGPA: 8.07</li>
+        <li><strong>SSC</strong> - Revathi High School, SSC, TG (2018) - CGPA: 8.7</li>
+      </ul>
+
+      <h3>Projects</h3>
+      <ul>
+        <li><strong>Android Accident Detection and Alert System:</strong> Utilized Android sensors and machine learning to detect vehicle accidents and alert emergency services. Designed a user-friendly interface for easy setup and customization. Successfully implemented a system to reduce response times and save lives.</li>
+        <li><strong>Fingerprint Based on ATM System:</strong> Designed a fingerprint recognition system for ATMs, eliminating PIN and card requirements. Implemented biometric authentication for secure transactions. Improved security and convenience.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Programming Languages: Python, HTML, CSS, JavaScript, MySQL, Machine Learning</li>
+        <li>Strong written and oral communication skills</li>
+        <li>Excellent documentation skills</li>
+        <li>Strong presentation and interpersonal skills</li>
+        <li>Ability to present ideas in user-friendly manner</li>
+      </ul>
+
+      <h3>Honours and Achievements</h3>
+      <ul>
+        <li>‘NSS coordinator’ in KG Reddy College of Engineering</li>
+        <li>Appreciation & participation certificate in Special Camp conducted by National Service Scheme</li>
+        <li>Appreciation certificate in Blood Donation Camp conducted by Indian Red Cross Society</li>
+      </ul>
+
+      <h3>Publications</h3>
+      <p>Presented paper in the 1st ICMED 2024 at KG Reddy College of Engineering.</p>
+
+      <h3>Personal details</h3>
+      <ul>
+        <li><strong>Name:</strong> Pulakandla Vivek Reddy</li>
+        <li><strong>Father’s name:</strong> Pulakandla Srinivas Reddy</li>
+        <li><strong>Mother's name:</strong> Pulakandla Manjula</li>
+        <li><strong>Date of Birth:</strong> 12/06/2003</li>
+        <li><strong>Nationality:</strong> Indian</li>
+        <li><strong>Languages:</strong> Telugu, English, Hindi</li>
+        <li><strong>Locality:</strong> Hyderabad</li>
+      </ul>
+      <p>I hereby declare that the above-mentioned information is true to the best of my knowledge and belief.</p>
+    </div>
+    <a href="PulakandlaVivekReddyResume.pdf" id="download-resume" download>Download Resume (PDF)</a>
+  </section>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
